@@ -63,7 +63,7 @@ body {
 /* Botones */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
     border-radius: 8px;
     text-decoration: none;
@@ -74,6 +74,8 @@ body {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    min-width: 180px;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -223,6 +225,8 @@ body {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 500px;
 }
 
 .hero-stats {
@@ -233,6 +237,7 @@ body {
     display: flex;
     gap: 4rem;
     z-index: 2;
+    margin-top: 3rem;
 }
 
 .stat-item {
@@ -924,25 +929,23 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 8rem 0 4rem;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-stats {
-        position: static;
-        transform: none;
-        margin-top: 3rem;
-        flex-direction: column;
-        gap: 2rem;
+    .hero-content {
+        padding: 0 20px;
     }
 
     .section-header h2 {
@@ -983,6 +986,23 @@ section {
 
     .hero-title {
         font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        margin: 2rem auto 3rem;
+    }
+
+    .btn {
+        min-width: 200px;
+        padding: 14px 20px;
+        font-size: 0.95rem;
     }
 
     .team-grid {
@@ -999,6 +1019,11 @@ section {
 
     .stat-item h3 {
         font-size: 2rem;
+    }
+
+    .hero-stats {
+        margin-top: 2rem;
+        gap: 1.5rem;
     }
 }
 
